@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "keep": [
+    {
+      "path": "Cargo.toml",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "Cargo.lock",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "src",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "tests",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "benchmarks",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "research",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "tools",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "results",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "README.md",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "LICENSE-MIT",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": ".git",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "storage-retention.json",
+      "reason": "Required library source, selected comparison/proof or exact reproduction input"
+    },
+    {
+      "path": "build",
+      "reason": "Active required comparison build output; retire or select exact binary only after workers finish"
+    }
+  ],
+  "safe_to_remove": []
+}

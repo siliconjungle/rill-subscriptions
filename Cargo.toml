@@ -1,0 +1,22 @@
+[package]
+name = "rill-subscriptions"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Exact incremental subscriptions over changing records"
+license = "MIT OR Apache-2.0"
+[workspace]
+members = ["benchmarks"]
+default-members = ["."]
+resolver = "3"
+[profile.dev]
+debug = 0
+incremental = false
+[profile.test]
+debug = 0
+incremental = false
+[profile.release]
+debug = 0
+incremental = false
+lto = "thin"
+codegen-units = 1

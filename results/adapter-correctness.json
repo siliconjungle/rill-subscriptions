@@ -1,0 +1,5496 @@
+{
+  "binarySha256": "4aa88c580a82718437826750f2079dedf238c4debc6584ca9b60cab7c07fa6a6",
+  "startedUTC": "2026-10-20T06:57:31.437284+00:00",
+  "scope": "All compiled adapters,128 records129 subscriptions,8 atomic batches each; complete vectors against full reconstruction and change-driven oracle. Separate target-size proofs are part of performance runs.",
+  "status": "PASS",
+  "runs": [
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-64",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "delta-scan-shared",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "full-scan-shared",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "full-scan-shared",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-16",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-16",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-16",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-16",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-16",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-16",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-32",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-32",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-32",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-32",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-32",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-64",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-64",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-64",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-64",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-128",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-128",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-128",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-128",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-128",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-256",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-256",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-256",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-256",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-256",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "rill-shared-grid-512",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "rill-shared-grid-512",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-512",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-512",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "grid-requery-shared-512",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "grid-requery-shared-512",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "native-rstar-shared",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "native-datafrog",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-ascent",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "native-ascent",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-crepe",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "native-crepe",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "sparse-0.1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "sparse-0.1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "sparse-1pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "sparse-10pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "sparse-10pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "sparse-100pct",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "sparse-100pct",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "shared-identical",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "shared-identical",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "clustered-overlap",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "clustered-overlap",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "moving-queries",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "moving-queries",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "mixed-record-query",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "mixed-record-query",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "insert-delete-reuse",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "insert-delete-reuse",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "payload-only",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "payload-only",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "noop",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "noop",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "large-box-fallback",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "large-box-fallback",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "tag-value-selective",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "tag-value-selective",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    },
+    {
+      "backend": "native-differential",
+      "case": "dense-output",
+      "exit": 0,
+      "result": {
+        "backend": "native-differential",
+        "case": "dense-output",
+        "exact": true,
+        "frames": 8,
+        "records": 128,
+        "subscriptions": 129
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "registeredUTC": "2026-10-20T06:43:20.845523+00:00",
+  "status": "OPEN",
+  "target": {
+    "activeSubscriptions": 20000,
+    "recordCounts": [
+      20000,
+      100000
+    ],
+    "interpretation": "In-process subscriptions, not network connections or whole-server capacity"
+  },
+  "semantics": {
+    "records": "Stable u64 ID, exact i32 3-D position, u64 tag mask, i64 numeric value, u64 projection revision; application payload stays with caller. No game concepts.",
+    "predicate": "Inclusive axis-aligned integer bounds AND required tag mask AND inclusive numeric range. Generic ID-based projected rows.",
+    "batches": "Atomic committed before/after views; upsert/remove/reconfigure records and subscriptions, last operation wins for repeated IDs; no-op input emits no changes.",
+    "outputs": "Complete unordered Added/Removed/Updated tuples of (subscription ID,record ID); no result caps, approximate filters or dropped updates. Updated only for changed records remaining in a match. Record and query changes in same batch reconcile against final state.",
+    "lifecycle": "Deletion, record/subscription ID reuse, query movement, payload revisions and repeated updates tested.",
+    "scope": "Common embedded subscription kernel. General SQL/recursive Datalog/transport guarantees remain upstream capabilities, not claimed equivalences."
+  },
+  "cases": [
+    "sparse-0.1pct",
+    "sparse-1pct",
+    "sparse-10pct",
+    "sparse-100pct",
+    "shared-identical",
+    "clustered-overlap",
+    "moving-queries",
+    "mixed-record-query",
+    "insert-delete-reuse",
+    "payload-only",
+    "noop",
+    "large-box-fallback",
+    "tag-value-selective",
+    "dense-output"
+  ],
+  "correctness": "Independent before/after brute-force oracle; full vectors checked outside timing. All output rows materialized and consumed in timed phase; state update, candidate discovery, matching and emission included. Initial build/subscription registration measured separately.",
+  "measurement": "Screen all adapters first; final randomized serial fresh-process controls, >=3 processes and >=9 alternating pairs per comparator/profile, preregistered holdout seed. Report setup, p50/p95/p99 batch latency, throughput, output count, allocation/RSS, failures/timeouts. Never pool incompatible semantics or report an algorithm-inspired variant as an upstream benchmark.",
+  "primarySeed": 71923,
+  "holdoutSeed": 61937,
+  "gate": "OPEN until inventory coverage complete for compatible implementations, exact correctness passes, and final candidate beats every successfully measured compatible comparator on every declared performance gate at20k subscriptions across both seeds. Missing/broken adapters and slower rows keep the gate OPEN. No universal speed claim beyond the declared matrix.",
+  "storage": "Minimal source/adapters, shared Cargo dependencies, one build target, debug/incremental disabled. Preserve useful proofs and required reproduction inputs; retire completed generated outputs only. Other workers remain running. 100GB reserve currently unmet."
+}

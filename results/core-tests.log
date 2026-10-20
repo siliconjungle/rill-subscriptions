@@ -1,0 +1,25 @@
+   Compiling rill-subscriptions v0.1.0 (/Users/james/Documents/ChatGPT/3d-modelling/rill-subscriptions)
+    Finished `test` profile [unoptimized] target(s) in 0.55s
+     Running unittests src/lib.rs (build/target/debug/deps/rill_subscriptions-514dcba42c7785cd)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/oracle.rs (build/target/debug/deps/oracle-3aa1f223a4f53cb2)
+
+running 5 tests
+test mixed_batches_repeated_operations_id_reuse_and_revision_only_updates ... ok
+test invalid_batch_leaves_state_and_output_unchanged ... ok
+test boundaries_negative_cells_tags_numeric_extremes_and_wide_ids ... ok
+test groups_share_membership_but_deliver_every_logical_event_and_release_on_last_unsubscribe ... ok
+test randomized_mixed_trace_matches_independent_full_recomputation ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.13s
+
+   Doc-tests rill_subscriptions
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
