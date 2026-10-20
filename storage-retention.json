@@ -64,7 +64,28 @@
     {
       "path": ".github",
       "reason": "Public core CI workflow"
+    },
+    {
+      "path": "js",
+      "reason": "Generic Node.js port source, tests and required reproduction inputs"
     }
   ],
-  "safe_to_remove": []
+  "safe_to_remove": [
+    {
+      "path": "build/ink-subscriptions.mjs",
+      "reason": "Completed exploratory synthetic Ink comparison; not the actual game baseline, retired without performance claim"
+    },
+    {
+      "path": "build/rust-pr-body.md",
+      "reason": "Completed GitHub PR staging; exact descriptions retained on the public pull requests"
+    },
+    {
+      "path": "build/rust-pr-current.md",
+      "reason": "Completed GitHub PR staging; exact descriptions retained on the public pull requests"
+    },
+    {
+      "path": "build/node-pr-body.md",
+      "reason": "Completed GitHub PR staging; exact descriptions retained on the public pull requests"
+    }
+  ]
 }

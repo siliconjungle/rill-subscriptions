@@ -8,3 +8,14 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - run: cargo test -p rill-subscriptions --locked
       - run: cargo package -p rill-subscriptions --locked --allow-dirty
+  node:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [22, 26]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm test --prefix js
