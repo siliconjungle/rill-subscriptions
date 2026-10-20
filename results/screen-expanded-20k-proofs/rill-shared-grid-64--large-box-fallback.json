@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "binary_fingerprint": 5994735836530747758,
+  "backend": "rill-shared-grid-64",
+  "scenario": "large-box-fallback",
+  "seed": 71923,
+  "records": 20000,
+  "subscriptions": 20000,
+  "steps": 4,
+  "expected": [
+    {
+      "rows": 90000,
+      "xor": 8263947872817507014,
+      "sum": 3755477852286696744
+    },
+    {
+      "rows": 0,
+      "xor": 0,
+      "sum": 0
+    },
+    {
+      "rows": 0,
+      "xor": 0,
+      "sum": 0
+    },
+    {
+      "rows": 0,
+      "xor": 0,
+      "sum": 0
+    },
+    {
+      "rows": 0,
+      "xor": 0,
+      "sum": 0
+    }
+  ]
+}

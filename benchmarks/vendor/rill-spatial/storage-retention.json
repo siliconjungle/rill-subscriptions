@@ -1,0 +1,37 @@
+{
+  "keep": [
+    {
+      "path": "Cargo.toml",
+      "reason": "Exact selected upstream reproduction input"
+    },
+    {
+      "path": "src/lib.rs",
+      "reason": "Exact selected upstream reproduction input"
+    },
+    {
+      "path": "src/batch.rs",
+      "reason": "Exact selected upstream reproduction input"
+    },
+    {
+      "path": "src/hierarchy.rs",
+      "reason": "Exact selected upstream reproduction input"
+    },
+    {
+      "path": "LICENSE-MIT",
+      "reason": "Exact selected upstream reproduction input"
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "reason": "Exact selected upstream reproduction input"
+    },
+    {
+      "path": "provenance.json",
+      "reason": "Exact selected upstream reproduction input"
+    },
+    {
+      "path": "storage-retention.json",
+      "reason": "Exact selected upstream reproduction input"
+    }
+  ],
+  "safe_to_remove": []
+}

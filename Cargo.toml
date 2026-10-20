@@ -5,8 +5,14 @@ edition = "2024"
 rust-version = "1.85"
 description = "Exact incremental subscriptions over changing records"
 license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/siliconjungle/rill-subscriptions"
+keywords = ["incremental", "subscriptions", "reactive", "queries", "index"]
+categories = ["data-structures", "algorithms"]
+exclude = ["build/", "research/", "results/", "benchmarks/", "tools/", "storage-retention.json"]
 [workspace]
 members = ["benchmarks"]
+exclude = ["benchmarks/vendor/rill-spatial", "benchmarks/dbsp"]
 default-members = ["."]
 resolver = "3"
 [profile.dev]

@@ -1,0 +1,11 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded incr-concurrent v0.1.0
+incr-concurrent #incremental #computation #reactive #concurrent #dataflow
+Incremental computation engine with Send+Sync runtime for multi-threaded services
+version: 0.1.0 (latest 0.2.0-beta.5)
+license: MIT
+rust-version: unknown
+documentation: https://docs.rs/incr-concurrent/0.1.0
+repository: https://github.com/Anyesh/incr
+crates.io: https://crates.io/crates/incr-concurrent/0.1.0

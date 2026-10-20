@@ -60,6 +60,10 @@
     {
       "path": "build",
       "reason": "Active required comparison build output; retire or select exact binary only after workers finish"
+    },
+    {
+      "path": ".github",
+      "reason": "Public core CI workflow"
     }
   ],
   "safe_to_remove": []

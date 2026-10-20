@@ -27,6 +27,7 @@
     "clustered-overlap",
     "moving-queries",
     "mixed-record-query",
+    "subscription-lifecycle",
     "insert-delete-reuse",
     "payload-only",
     "noop",
@@ -39,5 +40,6 @@
   "primarySeed": 71923,
   "holdoutSeed": 61937,
   "gate": "OPEN until inventory coverage complete for compatible implementations, exact correctness passes, and final candidate beats every successfully measured compatible comparator on every declared performance gate at20k subscriptions across both seeds. Missing/broken adapters and slower rows keep the gate OPEN. No universal speed claim beyond the declared matrix.",
-  "storage": "Minimal source/adapters, shared Cargo dependencies, one build target, debug/incremental disabled. Preserve useful proofs and required reproduction inputs; retire completed generated outputs only. Other workers remain running. 100GB reserve currently unmet."
+  "storage": "Minimal source/adapters, shared Cargo dependencies, one build target, debug/incremental disabled. Preserve useful proofs and required reproduction inputs; retire completed generated outputs only. Other workers remain running. 100GB reserve currently unmet.",
+  "traceAmendment": "Before expanded comparisons: add actual subscription deletion/reuse; alternate delete/reinsert on identical record IDs; broad spatial case uses selective numeric ranges with complete output. First four-case screen is exploratory and retained under its exact source/binary pin."
 }

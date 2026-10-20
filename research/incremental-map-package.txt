@@ -1,0 +1,14 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded incremental-map v0.2.8
+incremental-map
+combinators for incremental immutable maps (see crate `incremental`)
+version: 0.2.8
+license: MIT
+rust-version: unknown
+documentation: https://docs.rs/incremental-map/0.2.8
+crates.io: https://crates.io/crates/incremental-map/0.2.8
+features:
+ +default         = []
+  im              = [dep:im-rc]
+  nightly-incrsan = [incremental/nightly-incrsan]

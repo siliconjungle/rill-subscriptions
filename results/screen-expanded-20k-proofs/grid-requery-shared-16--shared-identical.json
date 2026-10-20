@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "binary_fingerprint": 5994735836530747758,
+  "backend": "grid-requery-shared-16",
+  "scenario": "shared-identical",
+  "seed": 71923,
+  "records": 20000,
+  "subscriptions": 20000,
+  "steps": 4,
+  "expected": [
+    {
+      "rows": 26250,
+      "xor": 15158938378004972148,
+      "sum": 623533686068159068
+    },
+    {
+      "rows": 20000,
+      "xor": 8505766794691321967,
+      "sum": 16412379261964155077
+    },
+    {
+      "rows": 0,
+      "xor": 0,
+      "sum": 0
+    },
+    {
+      "rows": 1250,
+      "xor": 2490859626022008789,
+      "sum": 13248785753840906003
+    },
+    {
+      "rows": 0,
+      "xor": 0,
+      "sum": 0
+    }
+  ]
+}

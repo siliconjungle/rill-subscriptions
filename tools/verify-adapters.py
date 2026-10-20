@@ -7,7 +7,16 @@ report={'binarySha256':hashlib.sha256(binary.read_bytes()).hexdigest(),'startedU
 for name in names:
  for case in cases:
   p=subprocess.run([str(binary),'--backend',name,'--case',case,'--records','128','--subscriptions','129','--steps','8','--verify-only'],capture_output=True,text=True)
-  report['runs'].append({'backend':name,'case':case,'exit':p.returncode,'result':json.loads(p.stdout) if p.returncode==0 else None,'error':p.stderr if p.returncode else None})
+  result=None; logs=[]
+  for line in p.stdout.splitlines():
+   try:
+    value=json.loads(line)
+   except json.JSONDecodeError:
+    logs.append(line); continue
+   if isinstance(value,dict) and value.get('backend')==name and value.get('case')==case: result=value
+   else: logs.append(line)
+  code=p.returncode or (0 if result is not None else 1)
+  report['runs'].append({'backend':name,'case':case,'exit':code,'result':result,'upstream_stdout':logs,'error':p.stderr if code else None})
   Path('results/adapter-correctness.json').write_text(json.dumps(report,indent=2)+'\n')
  print(name,'PASS' if all(r['exit']==0 for r in report['runs'] if r['backend']==name) else 'FAIL',flush=True)
 report['status']='PASS' if all(r['exit']==0 for r in report['runs']) else 'FAIL';Path('results/adapter-correctness.json').write_text(json.dumps(report,indent=2)+'\n');sys.exit(report['status']!='PASS')

@@ -1,0 +1,2031 @@
+{
+  "schema": 1,
+  "stage": "screen, not acceptance",
+  "status": "PASS",
+  "startedUTC": "2026-10-20T07:00:34.903129+00:00",
+  "sourceCommit": "b603f4ae4052d05d01d8006704c79ab68f0fc6f6",
+  "binarySha256": "e3edda8999431708501eee76ea270123beb7004d1e0903031a3438ee9a10fc67",
+  "lockSha256": "9fe8f18ac1ebc86304e728c4a83a4ebe499a852113e9ee22e1967372c34b0c2b",
+  "compiler": "rustc 1.96.0 (ac68faa20 2026-05-25)\nbinary: rustc\ncommit-hash: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96\ncommit-date: 2026-05-25\nhost: aarch64-apple-darwin\nrelease: 1.96.0\nLLVM version: 22.1.2\n",
+  "host": "macOS-26.5.2-arm64-arm-64bit",
+  "rssScope": "macOS time maximum resident set size includes full-vector oracle verification, scenario and backend, not just kernel live state.",
+  "runs": [
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 85245952,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-64",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 57.838125,
+            "setup_rows": 21520,
+            "batch_ms": [
+              0.147708,
+              0.13279200000000002,
+              0.13924999999999998,
+              0.135709
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 57.838125,
+        "batch_p50_ms": 0.135709,
+        "batch_p95_ms": 0.147708,
+        "batch_p99_ms": 0.147708,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.53 real         1.07 user         0.01 sys\n            85245952  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                6796  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 297  involuntary context switches\n         14761739381  instructions retired\n          3229949545  cycles elapsed\n            75956632  peak memory footprint\n"
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 32866304,
+      "result": {
+        "schema": 1,
+        "backend": "native-rstar-shared",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 12.299125,
+            "setup_rows": 26250,
+            "batch_ms": [
+              2.737625,
+              3.16525,
+              2.944875,
+              3.155292
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 12.299125,
+        "batch_p50_ms": 2.944875,
+        "batch_p95_ms": 3.16525,
+        "batch_p99_ms": 3.16525,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        0.99 real         0.96 user         0.02 sys\n            32866304  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                2169  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 257  involuntary context switches\n         14207574929  instructions retired\n          2962269354  cycles elapsed\n            31801704  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 42909696,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-256",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 29.64,
+            "setup_rows": 21520,
+            "batch_ms": [
+              0.371,
+              0.221583,
+              0.1615,
+              0.12237500000000001
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 29.64,
+        "batch_p50_ms": 0.1615,
+        "batch_p95_ms": 0.371,
+        "batch_p99_ms": 0.371,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.02 real         0.99 user         0.02 sys\n            42909696  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3105  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 246  involuntary context switches\n         14281579613  instructions retired\n          3048477902  cycles elapsed\n            41894248  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 34717696,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-128",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 13.488583,
+            "setup_rows": 26250,
+            "batch_ms": [
+              0.209708,
+              0.055125,
+              0.077375,
+              0.062333
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 13.488583,
+        "batch_p50_ms": 0.062333,
+        "batch_p95_ms": 0.209708,
+        "batch_p99_ms": 0.209708,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.01 real         0.99 user         0.01 sys\n            34717696  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                2272  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 375  involuntary context switches\n         14036955279  instructions retired\n          2933051198  cycles elapsed\n            33702248  peak memory footprint\n"
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 29130752,
+      "result": {
+        "schema": 1,
+        "backend": "delta-scan-shared",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 901.426959,
+            "setup_rows": 21520,
+            "batch_ms": [
+              21.342458,
+              21.235291999999998,
+              21.085917,
+              21.091833
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 901.426959,
+        "batch_p50_ms": 21.091833,
+        "batch_p95_ms": 21.342458,
+        "batch_p99_ms": 21.342458,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        2.88 real         2.83 user         0.04 sys\n            29130752  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                1931  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 716  involuntary context switches\n         41833603482  instructions retired\n          8489486917  cycles elapsed\n            28131688  peak memory footprint\n"
+    },
+    {
+      "backend": "native-ascent",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 155860992,
+      "result": {
+        "schema": 1,
+        "backend": "native-ascent",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 59.101791,
+            "setup_rows": 21520,
+            "batch_ms": [
+              50.611334,
+              49.925,
+              49.036457999999996,
+              51.391542
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 59.101791,
+        "batch_p50_ms": 49.925,
+        "batch_p95_ms": 51.391542,
+        "batch_p99_ms": 51.391542,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.60 real         1.50 user         0.08 sys\n           155860992  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               24807  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                1528  involuntary context switches\n         17323879001  instructions retired\n          4559234685  cycles elapsed\n           136315336  peak memory footprint\n"
+    },
+    {
+      "backend": "native-ascent",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 156565504,
+      "result": {
+        "schema": 1,
+        "backend": "native-ascent",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 31.759207999999997,
+            "setup_rows": 320000,
+            "batch_ms": [
+              26.559583,
+              25.872708000000003,
+              27.013792,
+              26.355415999999998
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 31.759207999999997,
+        "batch_p50_ms": 26.355415999999998,
+        "batch_p95_ms": 27.013792,
+        "batch_p99_ms": 27.013792,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.14 real         1.10 user         0.03 sys\n           156565504  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               11004  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 273  involuntary context switches\n         14513655965  instructions retired\n          3469043348  cycles elapsed\n           155566536  peak memory footprint\n"
+    },
+    {
+      "backend": "native-crepe",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 170180608,
+      "result": {
+        "schema": 1,
+        "backend": "native-crepe",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 78.179875,
+            "setup_rows": 21520,
+            "batch_ms": [
+              73.56224999999999,
+              69.275417,
+              67.450625,
+              66.89954200000001
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 78.179875,
+        "batch_p50_ms": 67.450625,
+        "batch_p95_ms": 73.56224999999999,
+        "batch_p99_ms": 73.56224999999999,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.66 real         1.58 user         0.06 sys\n           170180608  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               23955  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 541  involuntary context switches\n         20156909068  instructions retired\n          5065185362  cycles elapsed\n           142541256  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 58015744,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-32",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 21.552208,
+            "setup_rows": 320000,
+            "batch_ms": [
+              0.181542,
+              0.156375,
+              0.127292,
+              0.12233400000000001
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 21.552208,
+        "batch_p50_ms": 0.127292,
+        "batch_p95_ms": 0.181542,
+        "batch_p99_ms": 0.181542,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.00 real         0.98 user         0.01 sys\n            58015744  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3694  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 436  involuntary context switches\n         13385593478  instructions retired\n          2790687519  cycles elapsed\n            57000296  peak memory footprint\n"
+    },
+    {
+      "backend": "native-rstar",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 32768000,
+      "result": {
+        "schema": 1,
+        "backend": "native-rstar",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 32.154458,
+            "setup_rows": 21520,
+            "batch_ms": [
+              26.045375,
+              44.642209,
+              54.035624999999996,
+              66.31537499999999
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 32.154458,
+        "batch_p50_ms": 44.642209,
+        "batch_p95_ms": 66.31537499999999,
+        "batch_p99_ms": 66.31537499999999,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.41 real         1.39 user         0.01 sys\n            32768000  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                2163  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 398  involuntary context switches\n         16345995716  instructions retired\n          4066627395  cycles elapsed\n            31703400  peak memory footprint\n"
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 155648000,
+      "result": {
+        "schema": 1,
+        "backend": "native-datafrog",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 36.762083000000004,
+            "setup_rows": 320000,
+            "batch_ms": [
+              28.564417000000002,
+              27.428125,
+              29.065082999999998,
+              29.733417000000003
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 36.762083000000004,
+        "batch_p50_ms": 28.564417000000002,
+        "batch_p95_ms": 29.733417000000003,
+        "batch_p99_ms": 29.733417000000003,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.30 real         1.27 user         0.03 sys\n           155648000  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               10948  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 376  involuntary context switches\n         14612253978  instructions retired\n          3517989486  cycles elapsed\n           154599856  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 85311488,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-64",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 61.420333,
+            "setup_rows": 21520,
+            "batch_ms": [
+              0.854042,
+              0.5312910000000001,
+              0.517708,
+              0.530042
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 61.420333,
+        "batch_p50_ms": 0.530042,
+        "batch_p95_ms": 0.854042,
+        "batch_p99_ms": 0.854042,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.20 real         1.17 user         0.01 sys\n            85311488  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                6756  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 365  involuntary context switches\n         14871842572  instructions retired\n          3280954698  cycles elapsed\n            76054912  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 30162944,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-64",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 13.487582999999999,
+            "setup_rows": 26250,
+            "batch_ms": [
+              0.209125,
+              0.06904199999999999,
+              0.08695900000000001,
+              0.066
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 13.487582999999999,
+        "batch_p50_ms": 0.06904199999999999,
+        "batch_p95_ms": 0.209125,
+        "batch_p99_ms": 0.209125,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.06 real         1.04 user         0.01 sys\n            30162944  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                2004  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 267  involuntary context switches\n         14038644100  instructions retired\n          2953369328  cycles elapsed\n            29147496  peak memory footprint\n"
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 73564160,
+      "result": {
+        "schema": 1,
+        "backend": "native-datafrog",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 44.755958,
+            "setup_rows": 21520,
+            "batch_ms": [
+              41.623542,
+              41.862292000000004,
+              40.678708,
+              41.709
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 44.755958,
+        "batch_p50_ms": 41.623542,
+        "batch_p95_ms": 41.862292000000004,
+        "batch_p99_ms": 41.862292000000004,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.43 real         1.33 user         0.08 sys\n            73564160  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               25228  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 303  involuntary context switches\n         17247575512  instructions retired\n          4130495516  cycles elapsed\n            72434048  peak memory footprint\n"
+    },
+    {
+      "backend": "native-differential",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 322682880,
+      "result": {
+        "schema": 1,
+        "backend": "native-differential",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 158.362208,
+            "setup_rows": 320000,
+            "batch_ms": [
+              8.134333,
+              6.466667,
+              6.133583,
+              5.88275
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 158.362208,
+        "batch_p50_ms": 6.133583,
+        "batch_p95_ms": 8.134333,
+        "batch_p99_ms": 8.134333,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.34 real         1.23 user         0.10 sys\n           322682880  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               27670  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 401  involuntary context switches\n         16281700650  instructions retired\n          3875073894  cycles elapsed\n           321471064  peak memory footprint\n"
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 74039296,
+      "result": {
+        "schema": 1,
+        "backend": "native-datafrog",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 45.357583,
+            "setup_rows": 21520,
+            "batch_ms": [
+              41.373625,
+              42.530542,
+              41.381542,
+              41.218917
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 45.357583,
+        "batch_p50_ms": 41.373625,
+        "batch_p95_ms": 42.530542,
+        "batch_p99_ms": 42.530542,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.41 real         1.32 user         0.08 sys\n            74039296  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               25257  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 421  involuntary context switches\n         17335563900  instructions retired\n          4099235342  cycles elapsed\n            72941952  peak memory footprint\n"
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 28753920,
+      "result": {
+        "schema": 1,
+        "backend": "delta-scan-shared",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 950.5308329999999,
+            "setup_rows": 21520,
+            "batch_ms": [
+              21.664875,
+              21.256207999999997,
+              21.365709,
+              21.398084
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 950.5308329999999,
+        "batch_p50_ms": 21.365709,
+        "batch_p95_ms": 21.664875,
+        "batch_p99_ms": 21.664875,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        3.06 real         2.98 user         0.06 sys\n            28753920  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                1908  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 933  involuntary context switches\n         41277370006  instructions retired\n          8645492534  cycles elapsed\n            27738448  peak memory footprint\n"
+    },
+    {
+      "backend": "native-differential",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 158449664,
+      "result": {
+        "schema": 1,
+        "backend": "native-differential",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 111.05725,
+            "setup_rows": 26250,
+            "batch_ms": [
+              7.318042,
+              0.222791,
+              0.680083,
+              0.19124999999999998
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 111.05725,
+        "batch_p50_ms": 0.222791,
+        "batch_p95_ms": 7.318042,
+        "batch_p99_ms": 7.318042,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.34 real         1.31 user         0.03 sys\n           158449664  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               10144  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 327  involuntary context switches\n         16182510503  instructions retired\n          3518336862  cycles elapsed\n           146817504  peak memory footprint\n"
+    },
+    {
+      "backend": "delta-scan",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 28000256,
+      "result": {
+        "schema": 1,
+        "backend": "delta-scan",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 948.882292,
+            "setup_rows": 26250,
+            "batch_ms": [
+              15.640583999999999,
+              15.431542,
+              15.452667,
+              15.180459
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 948.882292,
+        "batch_p50_ms": 15.431542,
+        "batch_p95_ms": 15.640583999999999,
+        "batch_p99_ms": 15.640583999999999,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        3.08 real         3.02 user         0.06 sys\n            28000256  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                1872  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 791  involuntary context switches\n         41337882318  instructions retired\n          8574754563  cycles elapsed\n            26968400  peak memory footprint\n"
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 55787520,
+      "result": {
+        "schema": 1,
+        "backend": "delta-scan-shared",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 928.559291,
+            "setup_rows": 320000,
+            "batch_ms": [
+              0.897958,
+              0.8785829999999999,
+              0.878208,
+              0.88025
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 928.559291,
+        "batch_p50_ms": 0.8785829999999999,
+        "batch_p95_ms": 0.897958,
+        "batch_p99_ms": 0.897958,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        2.83 real         2.74 user         0.07 sys\n            55787520  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3704  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 661  involuntary context switches\n         38755396612  instructions retired\n          8075981985  cycles elapsed\n            52101504  peak memory footprint\n"
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 38780928,
+      "result": {
+        "schema": 1,
+        "backend": "native-rstar-shared",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 39.893458,
+            "setup_rows": 21520,
+            "batch_ms": [
+              31.435166,
+              50.542292,
+              59.702625000000005,
+              67.058
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 39.893458,
+        "batch_p50_ms": 50.542292,
+        "batch_p95_ms": 67.058,
+        "batch_p99_ms": 67.058,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.48 real         1.44 user         0.04 sys\n            38780928  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3092  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 328  involuntary context switches\n         16730166069  instructions retired\n          4366817967  cycles elapsed\n            37667152  peak memory footprint\n"
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 154353664,
+      "result": {
+        "schema": 1,
+        "backend": "native-rstar-shared",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 35.212041,
+            "setup_rows": 320000,
+            "batch_ms": [
+              27.054499999999997,
+              26.316958,
+              25.361167000000002,
+              24.864209000000002
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 35.212041,
+        "batch_p50_ms": 25.361167000000002,
+        "batch_p95_ms": 27.054499999999997,
+        "batch_p99_ms": 27.054499999999997,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.21 real         1.17 user         0.03 sys\n           154353664  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               10859  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 281  involuntary context switches\n         14529993787  instructions retired\n          3509644533  cycles elapsed\n           153354696  peak memory footprint\n"
+    },
+    {
+      "backend": "native-crepe",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 60096512,
+      "result": {
+        "schema": 1,
+        "backend": "native-crepe",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 20.677375,
+            "setup_rows": 26250,
+            "batch_ms": [
+              12.791625,
+              12.5935,
+              11.901333,
+              12.120416
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 20.677375,
+        "batch_p50_ms": 12.120416,
+        "batch_p95_ms": 12.791625,
+        "batch_p99_ms": 12.791625,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.14 real         1.11 user         0.02 sys\n            60096512  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                4804  page reclaims\n                  10  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 334  involuntary context switches\n         15024153527  instructions retired\n          3300837820  cycles elapsed\n            59015552  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 241844224,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-32",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 137.929833,
+            "setup_rows": 21520,
+            "batch_ms": [
+              0.177125,
+              0.14941600000000002,
+              0.160083,
+              0.159917
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 137.929833,
+        "batch_p50_ms": 0.159917,
+        "batch_p95_ms": 0.177125,
+        "batch_p99_ms": 0.177125,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.23 real         1.17 user         0.05 sys\n           241844224  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               19477  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 546  involuntary context switches\n         16354088009  instructions retired\n          3835627348  cycles elapsed\n           207028704  peak memory footprint\n"
+    },
+    {
+      "backend": "native-ascent",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 43450368,
+      "result": {
+        "schema": 1,
+        "backend": "native-ascent",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 12.266875,
+            "setup_rows": 26250,
+            "batch_ms": [
+              5.6754999999999995,
+              5.544875,
+              5.407167,
+              5.235166
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 12.266875,
+        "batch_p50_ms": 5.407167,
+        "batch_p95_ms": 5.6754999999999995,
+        "batch_p99_ms": 5.6754999999999995,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.08 real         1.03 user         0.02 sys\n            43450368  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                2797  page reclaims\n                  18  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                2826  involuntary context switches\n         14431450945  instructions retired\n          3141535537  cycles elapsed\n            42320232  peak memory footprint\n"
+    },
+    {
+      "backend": "native-rstar",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 154157056,
+      "result": {
+        "schema": 1,
+        "backend": "native-rstar",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 50.558917,
+            "setup_rows": 320000,
+            "batch_ms": [
+              36.309167,
+              39.09125,
+              34.231541,
+              33.411125
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 50.558917,
+        "batch_p50_ms": 34.231541,
+        "batch_p95_ms": 39.09125,
+        "batch_p99_ms": 39.09125,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.54 real         1.41 user         0.06 sys\n           154157056  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               11691  page reclaims\n                   2  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                5670  involuntary context switches\n         15538736834  instructions retired\n          4019503950  cycles elapsed\n           154075592  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 43253760,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-256",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 31.328374999999998,
+            "setup_rows": 21520,
+            "batch_ms": [
+              0.5814159999999999,
+              0.239375,
+              0.231083,
+              0.247125
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 31.328374999999998,
+        "batch_p50_ms": 0.239375,
+        "batch_p95_ms": 0.5814159999999999,
+        "batch_p99_ms": 0.5814159999999999,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.11 real         1.08 user         0.02 sys\n            43253760  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3080  page reclaims\n                  12  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                1078  involuntary context switches\n         14379273619  instructions retired\n          3017900823  cycles elapsed\n            42238312  peak memory footprint\n"
+    },
+    {
+      "backend": "delta-scan",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 28295168,
+      "result": {
+        "schema": 1,
+        "backend": "delta-scan",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 956.996125,
+            "setup_rows": 21520,
+            "batch_ms": [
+              14.731375,
+              14.923041999999999,
+              15.235125,
+              15.117416
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 956.996125,
+        "batch_p50_ms": 14.923041999999999,
+        "batch_p95_ms": 15.235125,
+        "batch_p99_ms": 15.235125,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        3.11 real         3.03 user         0.05 sys\n            28295168  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                1890  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                1583  involuntary context switches\n         41294616454  instructions retired\n          8567779534  cycles elapsed\n            27246952  peak memory footprint\n"
+    },
+    {
+      "backend": "native-differential",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 107003904,
+      "result": {
+        "schema": 1,
+        "backend": "native-differential",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 81.888792,
+            "setup_rows": 21520,
+            "batch_ms": [
+              0.595666,
+              0.49316699999999997,
+              0.498375,
+              0.427917
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 81.888792,
+        "batch_p50_ms": 0.49316699999999997,
+        "batch_p95_ms": 0.595666,
+        "batch_p99_ms": 0.595666,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.20 real         1.14 user         0.05 sys\n           107003904  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                7956  page reclaims\n                  29  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 512  involuntary context switches\n         15265545125  instructions retired\n          3365258450  cycles elapsed\n           104481152  peak memory footprint\n"
+    },
+    {
+      "backend": "native-crepe",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 171048960,
+      "result": {
+        "schema": 1,
+        "backend": "native-crepe",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 87.17470800000001,
+            "setup_rows": 21520,
+            "batch_ms": [
+              80.549166,
+              78.329708,
+              78.405458,
+              75.58883399999999
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 87.17470800000001,
+        "batch_p50_ms": 78.329708,
+        "batch_p95_ms": 80.549166,
+        "batch_p99_ms": 80.549166,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        2.24 real         1.88 user         0.08 sys\n           171048960  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               24307  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                3690  involuntary context switches\n         20293534611  instructions retired\n          5230010886  cycles elapsed\n           149897696  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 34570240,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-32",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 14.497834,
+            "setup_rows": 26250,
+            "batch_ms": [
+              0.250208,
+              0.095667,
+              0.112584,
+              0.089875
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 14.497834,
+        "batch_p50_ms": 0.095667,
+        "batch_p95_ms": 0.250208,
+        "batch_p99_ms": 0.250208,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.08 real         1.06 user         0.01 sys\n            34570240  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                2273  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 954  involuntary context switches\n         14054918937  instructions retired\n          2932959098  cycles elapsed\n            33554792  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-32",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 242319360,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-32",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 161.707459,
+            "setup_rows": 21520,
+            "batch_ms": [
+              2.829041,
+              1.944584,
+              2.2951249999999996,
+              2.446875
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 161.707459,
+        "batch_p50_ms": 2.2951249999999996,
+        "batch_p95_ms": 2.829041,
+        "batch_p99_ms": 2.829041,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.52 real         1.44 user         0.05 sys\n           242319360  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               19462  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                2734  involuntary context switches\n         16552906431  instructions retired\n          3969234763  cycles elapsed\n           207176184  peak memory footprint\n"
+    },
+    {
+      "backend": "native-datafrog",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 33980416,
+      "result": {
+        "schema": 1,
+        "backend": "native-datafrog",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 12.198208000000001,
+            "setup_rows": 26250,
+            "batch_ms": [
+              5.617208000000001,
+              5.639500000000001,
+              5.396542,
+              5.336334
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 12.198208000000001,
+        "batch_p50_ms": 5.396542,
+        "batch_p95_ms": 5.639500000000001,
+        "batch_p99_ms": 5.639500000000001,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.10 real         1.08 user         0.00 sys\n            33980416  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                2235  page reclaims\n                   2  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 684  involuntary context switches\n         14386510073  instructions retired\n          3026398111  cycles elapsed\n            32850280  peak memory footprint\n"
+    },
+    {
+      "backend": "native-differential",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 106643456,
+      "result": {
+        "schema": 1,
+        "backend": "native-differential",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 79.980083,
+            "setup_rows": 21520,
+            "batch_ms": [
+              1.0817080000000001,
+              0.923875,
+              1.011292,
+              0.880625
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 79.980083,
+        "batch_p50_ms": 0.923875,
+        "batch_p95_ms": 1.0817080000000001,
+        "batch_p99_ms": 1.0817080000000001,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.28 real         1.24 user         0.02 sys\n           106643456  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                7963  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 948  involuntary context switches\n         15385101030  instructions retired\n          3358915682  cycles elapsed\n           104595840  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 62701568,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-256",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 21.554417,
+            "setup_rows": 320000,
+            "batch_ms": [
+              0.151917,
+              0.121167,
+              0.116,
+              0.11349999999999999
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 21.554417,
+        "batch_p50_ms": 0.116,
+        "batch_p95_ms": 0.151917,
+        "batch_p99_ms": 0.151917,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        0.98 real         0.96 user         0.01 sys\n            62701568  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3990  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 489  involuntary context switches\n         13388868909  instructions retired\n          2667744483  cycles elapsed\n            61702528  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 50479104,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-128",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 37.913875,
+            "setup_rows": 21520,
+            "batch_ms": [
+              0.396125,
+              0.212416,
+              0.173125,
+              0.12754100000000002
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 37.913875,
+        "batch_p50_ms": 0.173125,
+        "batch_p95_ms": 0.396125,
+        "batch_p99_ms": 0.396125,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.09 real         1.07 user         0.01 sys\n            50479104  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                4407  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 443  involuntary context switches\n         14378119419  instructions retired\n          3031088786  cycles elapsed\n            49529192  peak memory footprint\n"
+    },
+    {
+      "backend": "native-ascent",
+      "case": "sparse-1pct",
+      "exit": 0,
+      "maximumResidentBytes": 152616960,
+      "result": {
+        "schema": 1,
+        "backend": "native-ascent",
+        "scenario": "sparse-1pct",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 54.485833,
+            "setup_rows": 21520,
+            "batch_ms": [
+              47.75875,
+              46.952665999999994,
+              47.13125,
+              46.861958
+            ],
+            "rows": [
+              223,
+              225,
+              226,
+              222
+            ],
+            "fingerprint_xor": 2665469502019046470
+          }
+        ],
+        "setup_median_ms": 54.485833,
+        "batch_p50_ms": 46.952665999999994,
+        "batch_p95_ms": 47.75875,
+        "batch_p99_ms": 47.75875,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.48 real         1.43 user         0.05 sys\n           152616960  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               24619  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 640  involuntary context switches\n         17202284232  instructions retired\n          4304635040  cycles elapsed\n           138871240  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-256",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 32587776,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-256",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 13.806541000000001,
+            "setup_rows": 26250,
+            "batch_ms": [
+              0.182334,
+              0.042584,
+              0.059334,
+              0.045000000000000005
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 13.806541000000001,
+        "batch_p50_ms": 0.045000000000000005,
+        "batch_p95_ms": 0.182334,
+        "batch_p99_ms": 0.182334,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.02 real         1.01 user         0.00 sys\n            32587776  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                2140  page reclaims\n                  12  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   1  voluntary context switches\n                 485  involuntary context switches\n         14021351358  instructions retired\n          2901362738  cycles elapsed\n            31572328  peak memory footprint\n"
+    },
+    {
+      "backend": "delta-scan",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 28049408,
+      "result": {
+        "schema": 1,
+        "backend": "delta-scan",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 917.48475,
+            "setup_rows": 21520,
+            "batch_ms": [
+              17.739667,
+              18.52825,
+              18.628375,
+              17.50925
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 917.48475,
+        "batch_p50_ms": 17.739667,
+        "batch_p95_ms": 18.628375,
+        "batch_p99_ms": 18.628375,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        2.99 real         2.95 user         0.02 sys\n            28049408  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                1875  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                2693  involuntary context switches\n         41546637844  instructions retired\n          8573704377  cycles elapsed\n            27033936  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 46235648,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-128",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 37.732667,
+            "setup_rows": 21520,
+            "batch_ms": [
+              0.6889580000000001,
+              0.294041,
+              0.272042,
+              0.28008299999999997
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 37.732667,
+        "batch_p50_ms": 0.28008299999999997,
+        "batch_p95_ms": 0.6889580000000001,
+        "batch_p99_ms": 0.6889580000000001,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.31 real         1.22 user         0.02 sys\n            46235648  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3918  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                3349  involuntary context switches\n         14494461124  instructions retired\n          3337993312  cycles elapsed\n            45793640  peak memory footprint\n"
+    },
+    {
+      "backend": "native-rstar",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 33390592,
+      "result": {
+        "schema": 1,
+        "backend": "native-rstar",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 26.952125,
+            "setup_rows": 26250,
+            "batch_ms": [
+              17.943416,
+              31.178875,
+              31.925375,
+              36.629625
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 26.952125,
+        "batch_p50_ms": 31.178875,
+        "batch_p95_ms": 36.629625,
+        "batch_p99_ms": 36.629625,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.35 real         1.32 user         0.01 sys\n            33390592  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                2201  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                1078  involuntary context switches\n         16333120778  instructions retired\n          3635165864  cycles elapsed\n            32325992  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-64",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 62357504,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-64",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 22.124624999999998,
+            "setup_rows": 320000,
+            "batch_ms": [
+              0.129209,
+              0.11691700000000001,
+              0.113291,
+              0.108583
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 22.124624999999998,
+        "batch_p50_ms": 0.113291,
+        "batch_p95_ms": 0.129209,
+        "batch_p99_ms": 0.129209,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.06 real         1.04 user         0.01 sys\n            62357504  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3969  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 724  involuntary context switches\n         13396115172  instructions retired\n          2866868415  cycles elapsed\n            61358464  peak memory footprint\n"
+    },
+    {
+      "backend": "rill-shared-grid-128",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 62357504,
+      "result": {
+        "schema": 1,
+        "backend": "rill-shared-grid-128",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 20.740708,
+            "setup_rows": 320000,
+            "batch_ms": [
+              0.172208,
+              0.11979100000000001,
+              0.117833,
+              0.11733299999999999
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 20.740708,
+        "batch_p50_ms": 0.117833,
+        "batch_p95_ms": 0.172208,
+        "batch_p99_ms": 0.172208,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.01 real         1.00 user         0.00 sys\n            62357504  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3969  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 365  involuntary context switches\n         13386567146  instructions retired\n          2796575589  cycles elapsed\n            61358464  peak memory footprint\n"
+    },
+    {
+      "backend": "delta-scan",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 58163200,
+      "result": {
+        "schema": 1,
+        "backend": "delta-scan",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 982.990833,
+            "setup_rows": 320000,
+            "batch_ms": [
+              0.27141699999999996,
+              0.208417,
+              0.253917,
+              0.204167
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 982.990833,
+        "batch_p50_ms": 0.208417,
+        "batch_p95_ms": 0.27141699999999996,
+        "batch_p99_ms": 0.27141699999999996,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        2.88 real         2.84 user         0.02 sys\n            58163200  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3713  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                1799  involuntary context switches\n         38671866514  instructions retired\n          7888897535  cycles elapsed\n            57196904  peak memory footprint\n"
+    },
+    {
+      "backend": "delta-scan-shared",
+      "case": "shared-identical",
+      "exit": 0,
+      "maximumResidentBytes": 28557312,
+      "result": {
+        "schema": 1,
+        "backend": "delta-scan-shared",
+        "scenario": "shared-identical",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 991.6474159999999,
+            "setup_rows": 26250,
+            "batch_ms": [
+              1.002833,
+              1.012625,
+              0.950167,
+              0.88575
+            ],
+            "rows": [
+              20000,
+              0,
+              1250,
+              0
+            ],
+            "fingerprint_xor": 6096680325818406842
+          }
+        ],
+        "setup_median_ms": 991.6474159999999,
+        "batch_p50_ms": 0.950167,
+        "batch_p95_ms": 1.012625,
+        "batch_p99_ms": 1.012625,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        3.04 real         3.00 user         0.02 sys\n            28557312  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                1906  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                1837  involuntary context switches\n         39578231432  instructions retired\n          8209873157  cycles elapsed\n            27541840  peak memory footprint\n"
+    },
+    {
+      "backend": "native-rstar",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 32178176,
+      "result": {
+        "schema": 1,
+        "backend": "native-rstar",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 34.083541000000004,
+            "setup_rows": 21520,
+            "batch_ms": [
+              24.626125,
+              24.587833,
+              24.336375,
+              24.305457999999998
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 34.083541000000004,
+        "batch_p50_ms": 24.336375,
+        "batch_p95_ms": 24.626125,
+        "batch_p99_ms": 24.626125,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.54 real         1.31 user         0.00 sys\n            32178176  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                2127  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 855  involuntary context switches\n         15319186161  instructions retired\n          3630375026  cycles elapsed\n            31129960  peak memory footprint\n"
+    },
+    {
+      "backend": "native-rstar-shared",
+      "case": "moving-queries",
+      "exit": 0,
+      "maximumResidentBytes": 38584320,
+      "result": {
+        "schema": 1,
+        "backend": "native-rstar-shared",
+        "scenario": "moving-queries",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 40.14,
+            "setup_rows": 21520,
+            "batch_ms": [
+              28.975167,
+              28.499209,
+              29.024749999999997,
+              27.503708000000003
+            ],
+            "rows": [
+              223,
+              41,
+              35,
+              35
+            ],
+            "fingerprint_xor": 13965948635504793170
+          }
+        ],
+        "setup_median_ms": 40.14,
+        "batch_p50_ms": 28.499209,
+        "batch_p95_ms": 29.024749999999997,
+        "batch_p99_ms": 29.024749999999997,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.33 real         1.31 user         0.01 sys\n            38584320  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n                3090  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 563  involuntary context switches\n         15693255561  instructions retired\n          3734434989  cycles elapsed\n            37519720  peak memory footprint\n"
+    },
+    {
+      "backend": "native-crepe",
+      "case": "dense-output",
+      "exit": 0,
+      "maximumResidentBytes": 160972800,
+      "result": {
+        "schema": 1,
+        "backend": "native-crepe",
+        "scenario": "dense-output",
+        "seed": 71923,
+        "records": 20000,
+        "subscriptions": 20000,
+        "steps": 4,
+        "rounds": [
+          {
+            "setup_ms": 35.674709,
+            "setup_rows": 320000,
+            "batch_ms": [
+              29.900916,
+              29.04975,
+              29.892541,
+              28.299208999999998
+            ],
+            "rows": [
+              20000,
+              20000,
+              20000,
+              20000
+            ],
+            "fingerprint_xor": 0
+          }
+        ],
+        "setup_median_ms": 35.674709,
+        "batch_p50_ms": 29.04975,
+        "batch_p95_ms": 29.900916,
+        "batch_p99_ms": 29.900916,
+        "batch_samples": 4,
+        "exact_full_vectors_verified": true,
+        "scope": "Exact in-process subscriptions, no network clients, renderer or whole-server capacity. Full input normalization, matching, complete event materialization/consumption/drop included. Setup separate. Small sample screen percentiles are descriptive, not sustained tail-latency qualification."
+      },
+      "diagnostics": "        1.26 real         1.22 user         0.02 sys\n           160972800  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               12046  page reclaims\n                   0  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                   0  voluntary context switches\n                 493  involuntary context switches\n         15005556920  instructions retired\n          3628956996  cycles elapsed\n           159990216  peak memory footprint\n"
+    }
+  ],
+  "completedUTC": "2026-10-20T07:01:50.660701+00:00"
+}
