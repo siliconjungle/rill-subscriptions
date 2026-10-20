@@ -410,3 +410,18 @@ fn packed_membership_promotes_demotes_and_updates_packed_record_offsets() {
     assert_eq!(stats.changed_subscriptions, 0);
     assert_eq!(stats.unique_queries, 2);
 }
+
+#[test]
+fn transient_selection_is_exact_and_does_not_install_subscriptions() {
+    let mut e = Engine::default();
+    e.apply(&Batch {
+        records: vec![RecordChange::Put(Record::new(u64::MAX, [-1, 0, 1]))],
+        subscriptions: vec![],
+    })
+    .unwrap();
+    assert_eq!(e.select(Query::all()).unwrap().len(), 1);
+    assert_eq!(e.select(Query::bounds([1; 3], [2; 3])).unwrap().len(), 0);
+    assert_eq!(e.subscription_count(), 0);
+    assert_eq!(e.unique_query_count(), 0);
+    assert_eq!(e.select(Query::bounds([1; 3], [0; 3])), Err(Error::Bounds));
+}

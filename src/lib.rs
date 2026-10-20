@@ -424,6 +424,28 @@ impl<P: Projection, Q: Predicate<P>, R: Router<P, Q>> SubscriptionEngine<P, Q, R
             .get(&id)
             .map(|g| self.groups[*g].as_ref().unwrap().query)
     }
+    /// Evaluate an ephemeral query against committed records without installing
+    /// a subscription. Routing is conservative; exact matching decides results.
+    pub fn select(&self, query: Q) -> Result<Vec<P>, Error> {
+        query.validate()?;
+        let mut rows = Vec::new();
+        match self.routing.query_keys(query) {
+            None => rows.extend(
+                self.records
+                    .values()
+                    .filter(|e| query.matches(&e.value))
+                    .map(|e| e.value),
+            ),
+            Some(keys) => {
+                for key in keys.into_iter().collect::<HashSet<_>>() {
+                    if let Some(bucket) = self.record_cells.get(&key) {
+                        rows.extend(bucket.iter().copied().filter(|r| query.matches(r)));
+                    }
+                }
+            }
+        }
+        Ok(rows)
+    }
     pub fn matching_records(&self, id: SubscriptionId) -> Vec<P> {
         self.subscriptions
             .get(&id)
