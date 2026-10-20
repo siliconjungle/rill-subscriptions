@@ -18,7 +18,7 @@ impl State {
   for &(id,_,q) in &p.queries {if let Some(q)=q {self.queries.insert(id,q);}else{self.queries.remove(&id);}}
  }
 }
-fn emit(subscription:u64,old:Option<Record>,new:Option<Record>,out:&mut Vec<Event>){
+pub(crate) fn emit(subscription:u64,old:Option<Record>,new:Option<Record>,out:&mut Vec<Event>){
  if old==new{return;}
  match (old,new) {
   (None,Some(r))=>out.push(Event{subscription,record:r.id,kind:EventKind::Added,revision:r.revision}),

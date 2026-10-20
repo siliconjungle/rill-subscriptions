@@ -126,7 +126,7 @@ struct Group {
     group_ids: HashMap<Query, usize>,
     groups: Vec<Option<Group>>,
     free: Vec<usize>,
-    cell_groups: HashMap<Cell, HashSet<usize>>,
+    cell_groups: HashMap<Cell, Vec<usize>>,
     broad_groups: HashSet<usize>,
     marks: Vec<u64>,
     epoch: u64,
@@ -263,7 +263,7 @@ impl Engine {
             } }
         } else { members.extend(self.records.values().filter(|r| query.matches(r)).map(|r| r.id)); }
         let g = self.free.pop().unwrap_or_else(|| { self.groups.push(None); self.marks.push(0); self.groups.len()-1 });
-        if let Some(cells) = &cells { for &cell in cells { self.cell_groups.entry(cell).or_default().insert(g); } }
+        if let Some(cells) = &cells { for &cell in cells { self.cell_groups.entry(cell).or_default().push(g); } }
         else { self.broad_groups.insert(g); }
         self.groups[g] = Some(Group { query, subscribers: HashSet::from([subscriber]), members, cells });
         self.group_ids.insert(query,g); self.subscriptions.insert(subscriber,g);
@@ -275,7 +275,9 @@ impl Engine {
         let group = self.groups[g].take().unwrap(); self.group_ids.remove(&group.query);
         if let Some(cells) = group.cells {
             for cell in cells {
-                let bucket = self.cell_groups.get_mut(&cell).unwrap(); bucket.remove(&g);
+                let bucket = self.cell_groups.get_mut(&cell).unwrap();
+                let offset = bucket.iter().position(|&id| id == g).expect("registered query cell");
+                bucket.swap_remove(offset);
                 if bucket.is_empty() { self.cell_groups.remove(&cell); }
             }
         } else { self.broad_groups.remove(&g); }
