@@ -1,0 +1,14 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded drasi-core v0.5.10
+drasi-core #drasi
+Drasi Core
+version: 0.5.10
+license: Apache-2.0
+rust-version: unknown
+documentation: https://docs.rs/drasi-core/0.5.10
+repository: https://github.com/drasi-project/drasi-core
+crates.io: https://crates.io/crates/drasi-core/0.5.10
+features:
+ +default         = []
+  parallel_solver = []

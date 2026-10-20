@@ -1,0 +1,11 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded signals v0.0.5
+signals #signals #frp #emitter
+A functional-reactive-like library for Rust that allows asynchronous chaining
+version: 0.0.5
+license: MIT/Apache-2.0
+rust-version: unknown
+documentation: https://docs.rs/signals/0.0.5
+repository: https://github.com/zutils/signals
+crates.io: https://crates.io/crates/signals/0.0.5

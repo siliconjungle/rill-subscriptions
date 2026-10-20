@@ -1,0 +1,20 @@
+[package]
+name = "rill-spatial"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "A dynamic spatial index for exact 2D and 3D radius queries"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/siliconjungle/rill-spatial"
+keywords = ["spatial", "radius", "proximity", "geometry", "index"]
+categories = ["data-structures", "algorithms"]
+exclude = ["build/", "research/", "results/", "benchmarks/", "tools/", "javascript/"]
+
+[dependencies]
+wide = { version = "=0.7.33", optional = true }
+
+[features]
+default = ["simd"]
+simd = ["dep:wide"]
+adaptive-batches = []
+

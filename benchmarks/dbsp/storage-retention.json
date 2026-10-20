@@ -1,0 +1,17 @@
+{
+  "keep": [
+    {
+      "path": "Cargo.toml",
+      "reason": "Isolated native DBSP comparison: upstream pins roaring0.11.4, main component comparison pins0.11.5. Shared benchmark source is referenced directly, not copied."
+    },
+    {
+      "path": "Cargo.lock",
+      "reason": "Isolated native DBSP comparison: upstream pins roaring0.11.4, main component comparison pins0.11.5. Shared benchmark source is referenced directly, not copied."
+    },
+    {
+      "path": "storage-retention.json",
+      "reason": "Isolated native DBSP comparison: upstream pins roaring0.11.4, main component comparison pins0.11.5. Shared benchmark source is referenced directly, not copied."
+    }
+  ],
+  "safe_to_remove": []
+}

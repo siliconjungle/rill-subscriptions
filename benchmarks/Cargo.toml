@@ -40,6 +40,18 @@ leptos_reactive = { version = "=0.6.15", optional = true }
 concoct = { version = "=0.18.0", optional = true }
 dioxus-signals = { version = "=0.7.10", optional = true }
 
+rill-spatial = { path = "vendor/rill-spatial", optional = true }
+
+drasi-core = { version = "=0.5.10", optional = true }
+drasi-query-cypher = { version = "=0.3.6", optional = true }
+tokio = { version = "1", features=["rt","time","sync"], optional = true }
+incr-concurrent = { version = "=0.1.0", optional = true }
+incremental-map = { version = "=0.2.8", optional = true }
+
+signals = { version = "=0.0.5", optional = true }
+
+dioxus-core = { version = "=0.7.10", optional = true }
+
 [features]
 default = []
 differential_dataflow = ["dep:differential-dataflow", "dep:timely"]
@@ -71,4 +83,13 @@ sodium_rust = ["dep:sodium-rust"]
 frappe = ["dep:frappe"]
 leptos_reactive = ["dep:leptos_reactive"]
 concoct = ["dep:concoct"]
-dioxus_signals = ["dep:dioxus-signals"]
+dioxus_signals = ["dep:dioxus-signals","dep:dioxus-core"]
+rill_spatial = ["dep:rill-spatial"]
+drasi = ["dep:drasi-core","dep:drasi-query-cypher","dep:tokio"]
+incr_concurrent = ["dep:incr-concurrent"]
+incremental_map = ["dep:incremental-map","incremental"]
+signals = ["dep:signals"]
+allocation_audit = []
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(feature, values("dbsp"))'] }

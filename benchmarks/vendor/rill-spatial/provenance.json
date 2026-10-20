@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/siliconjungle/rill-spatial",
+  "commit": "f160fb893b58291c66329826bca1701aad6bfa09",
+  "sourceSha256": {
+    "src/lib.rs": "39563ffe46134e55a356f16a3e0010b4f62d53045cf2a402ebb3a52ce03cc3fc",
+    "src/batch.rs": "4da8c15252c6ad7160227814bf29a8e7bcf829f701c2a3540d11d564aec518fb",
+    "src/hierarchy.rs": "299cd36c34e398b51832a44d83d92153b13488ddbe61293b3d8a8b5273d618ca",
+    "LICENSE-MIT": "079adec67563038bee5dac86b57a3cf1546cffc112f51f85c68b13c3d0369428",
+    "LICENSE-APACHE": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+  },
+  "manifestChange": "Preserve package/dependencies/features; omit upstream workspace, benchmarks and build profiles. Dependency source unchanged."
+}

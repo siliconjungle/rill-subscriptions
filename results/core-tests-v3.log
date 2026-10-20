@@ -1,0 +1,37 @@
+   Compiling rill-subscriptions v0.1.0 (/Users/james/Documents/ChatGPT/3d-modelling/rill-subscriptions)
+    Finished `test` profile [unoptimized] target(s) in 0.68s
+     Running unittests src/lib.rs (build/target/debug/deps/rill_subscriptions-24cb5d77916ff1a1)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/generic.rs (build/target/debug/deps/generic-7e26422c4b54f237)
+
+running 2 tests
+test generic_invalid_batch_is_atomic ... ok
+test arbitrary_categorical_projection_matches_full_relation_with_and_without_routing ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.39s
+
+     Running tests/oracle.rs (build/target/debug/deps/oracle-85e9d0d14be438e3)
+
+running 6 tests
+test invalid_batch_leaves_state_and_output_unchanged ... ok
+test mixed_batches_repeated_operations_id_reuse_and_revision_only_updates ... ok
+test boundaries_negative_cells_tags_numeric_extremes_and_wide_ids ... ok
+test packed_membership_promotes_demotes_and_updates_packed_record_offsets ... ok
+test groups_share_membership_but_deliver_every_logical_event_and_release_on_last_unsubscribe ... ok
+test randomized_mixed_trace_matches_independent_full_recomputation ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.08s
+
+   Doc-tests rill_subscriptions
+
+running 2 tests
+test src/lib.rs - (line 33) ... ok
+test src/lib.rs - (line 17) ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+all doctests ran in 0.79s; merged doctests compilation took 0.38s

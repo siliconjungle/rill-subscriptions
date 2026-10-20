@@ -1,0 +1,10 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded frp v0.1.0
+frp
+A Rust implementation of frp which is a proxy.
+version: 0.1.0
+license: MIT
+rust-version: unknown
+documentation: https://gofrp.org/
+crates.io: https://crates.io/crates/frp/0.1.0

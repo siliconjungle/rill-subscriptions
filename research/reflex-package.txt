@@ -1,0 +1,11 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded reflex v0.1.2
+reflex
+A minimal flex-like lexer
+version: 0.1.2
+license: MIT
+rust-version: unknown
+documentation: https://docs.rs/reflex/0.1.2
+repository: https://github.com/nazek42/reflex
+crates.io: https://crates.io/crates/reflex/0.1.2

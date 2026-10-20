@@ -10,8 +10,8 @@
       "publishedUTC": "2026-07-15T20:56:23Z",
       "source": "https://index.crates.io/di/ff/differential-dataflow",
       "docs": "https://docs.rs/differential-dataflow/0.25.1",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_ENGINE",
       "normalDependencies": [
         "columnar",
         "columnation",
@@ -20,7 +20,13 @@
         "serde",
         "smallvec",
         "timely"
-      ]
+      ],
+      "adapters": [
+        "native-differential",
+        "native-differential-shared"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "timely",
@@ -30,8 +36,8 @@
       "publishedUTC": "2026-07-14T21:18:59Z",
       "source": "https://index.crates.io/ti/me/timely",
       "docs": "https://docs.rs/timely/0.31.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "SUPPORTING_RUNTIME",
       "normalDependencies": [
         "bincode",
         "byteorder",
@@ -45,7 +51,8 @@
         "timely_communication",
         "timely_container",
         "timely_logging"
-      ]
+      ],
+      "note": "Measured through Differential Dataflow, not counted as another query engine."
     },
     {
       "name": "dbsp",
@@ -55,8 +62,8 @@
       "publishedUTC": "2026-10-18T11:26:48Z",
       "source": "https://index.crates.io/db/sp/dbsp",
       "docs": "https://docs.rs/dbsp/0.367.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "anyhow",
         "arc-swap",
@@ -137,9 +144,14 @@
       "publishedUTC": "2019-01-02T19:42:28Z",
       "source": "https://index.crates.io/da/ta/datafrog",
       "docs": "https://docs.rs/datafrog/2.0.1",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
-      "normalDependencies": []
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_ENGINE",
+      "normalDependencies": [],
+      "adapters": [
+        "native-datafrog"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "ascent",
@@ -149,8 +161,8 @@
       "publishedUTC": "2026-08-29T21:02:18Z",
       "source": "https://index.crates.io/as/ce/ascent",
       "docs": "https://docs.rs/ascent/0.8.1",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_ENGINE",
       "normalDependencies": [
         "ascent_base",
         "ascent_macro",
@@ -163,7 +175,12 @@
         "rayon",
         "rustc-hash",
         "web-time"
-      ]
+      ],
+      "adapters": [
+        "native-ascent"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "crepe",
@@ -173,15 +190,20 @@
       "publishedUTC": "2025-12-14T00:11:27Z",
       "source": "https://index.crates.io/cr/ep/crepe",
       "docs": "https://docs.rs/crepe/0.2.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_ENGINE",
       "normalDependencies": [
         "petgraph",
         "proc-macro-error",
         "proc-macro2",
         "quote",
         "syn"
-      ]
+      ],
+      "adapters": [
+        "native-crepe"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "salsa",
@@ -191,8 +213,8 @@
       "publishedUTC": "2026-09-24T09:56:30Z",
       "source": "https://index.crates.io/sa/ls/salsa",
       "docs": "https://docs.rs/salsa/0.28.5",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_ENGINE",
       "normalDependencies": [
         "boxcar",
         "compact_str",
@@ -219,7 +241,12 @@
         "tracing",
         "triomphe",
         "typeid"
-      ]
+      ],
+      "adapters": [
+        "native-salsa-cells"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "adapton",
@@ -229,8 +256,8 @@
       "publishedUTC": "2019-12-22T00:42:04Z",
       "source": "https://index.crates.io/ad/ap/adapton",
       "docs": "https://docs.rs/adapton/0.3.31",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": []
     },
     {
@@ -241,15 +268,20 @@
       "publishedUTC": "2025-01-08T01:18:20Z",
       "source": "https://index.crates.io/in/cr/incremental",
       "docs": "https://docs.rs/incremental/0.2.8",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_ENGINE",
       "normalDependencies": [
         "im-rc",
         "miny",
         "slotmap",
         "smallvec",
         "tracing"
-      ]
+      ],
+      "adapters": [
+        "native-incremental-cells"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "incremental-map",
@@ -259,12 +291,13 @@
       "publishedUTC": "2025-01-08T01:20:48Z",
       "source": "https://index.crates.io/in/cr/incremental-map",
       "docs": "https://docs.rs/incremental-map/0.2.8",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "COLLECTION_EXTENSION",
       "normalDependencies": [
         "im-rc",
         "incremental"
-      ]
+      ],
+      "note": "Incremental BTreeMap/OrdMap combinators on Incremental; a separate native collection adapter remains pending."
     },
     {
       "name": "depends",
@@ -274,8 +307,8 @@
       "publishedUTC": "2025-02-20T19:49:45Z",
       "source": "https://index.crates.io/de/pe/depends",
       "docs": "https://docs.rs/depends/0.11.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "ahash",
         "depends_derives",
@@ -292,8 +325,8 @@
       "publishedUTC": "2026-04-06T02:33:55Z",
       "source": "https://index.crates.io/in/cr/incr-compute",
       "docs": "https://docs.rs/incr-compute/0.1.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "rustc-hash"
       ]
@@ -306,8 +339,8 @@
       "publishedUTC": "2026-04-06T02:34:05Z",
       "source": "https://index.crates.io/in/cr/incr-concurrent",
       "docs": "https://docs.rs/incr-concurrent/0.1.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "rustc-hash"
       ]
@@ -321,7 +354,7 @@
       "source": "https://index.crates.io/sa/lv/salvia",
       "docs": "https://docs.rs/salvia/0.1.0",
       "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "comparisonClass": "UNRESOLVED_CANDIDATE",
       "normalDependencies": [
         "anymap2",
         "async-trait",
@@ -331,13 +364,16 @@
         "salvia_macro",
         "tokio",
         "tracing"
-      ]
+      ],
+      "note": "Discovery is not coverage; eligibility and adapter/build gaps keep acceptance OPEN."
     },
     {
       "name": "recompute",
       "source": "https://index.crates.io/re/co/recompute",
       "status": "NOT_FOUND_ON_REGISTRY",
-      "error": "curl: (56) The requested URL returned error: 404"
+      "error": "curl: (56) The requested URL returned error: 404",
+      "comparisonClass": "UNRESOLVED_CANDIDATE",
+      "note": "Discovery is not coverage; eligibility and adapter/build gaps keep acceptance OPEN."
     },
     {
       "name": "anchors",
@@ -348,12 +384,13 @@
       "source": "https://index.crates.io/an/ch/anchors",
       "docs": "https://docs.rs/anchors/0.6.0",
       "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "comparisonClass": "UNRESOLVED_CANDIDATE",
       "normalDependencies": [
         "arena-graph",
         "im",
         "typed-arena"
-      ]
+      ],
+      "note": "Discovery is not coverage; eligibility and adapter/build gaps keep acceptance OPEN."
     },
     {
       "name": "reflex",
@@ -363,11 +400,12 @@
       "publishedUTC": "2019-02-18T21:26:30Z",
       "source": "https://index.crates.io/re/fl/reflex",
       "docs": "https://docs.rs/reflex/0.1.2",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "UNRELATED_NAME",
       "normalDependencies": [
         "regex"
-      ]
+      ],
+      "note": "Pinned published crate is a lexer, not the similarly named reactive language. Primary package metadata retained."
     },
     {
       "name": "reactive_graph",
@@ -377,8 +415,8 @@
       "publishedUTC": "2026-10-14T16:14:12Z",
       "source": "https://index.crates.io/re/ac/reactive_graph",
       "docs": "https://docs.rs/reactive_graph/0.2.16",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_ENGINE",
       "normalDependencies": [
         "any_spawner",
         "async-lock",
@@ -397,7 +435,12 @@
         "thiserror",
         "tracing",
         "web-sys"
-      ]
+      ],
+      "adapters": [
+        "native-reactive-graph-cells"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "reactive_stores",
@@ -407,8 +450,8 @@
       "publishedUTC": "2026-09-26T19:32:18Z",
       "source": "https://index.crates.io/re/ac/reactive_stores",
       "docs": "https://docs.rs/reactive_stores/0.4.4",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "STRUCTURAL_EXTENSION",
       "normalDependencies": [
         "guardian",
         "indexmap",
@@ -421,7 +464,8 @@
         "send_wrapper",
         "serde",
         "slotmap"
-      ]
+      ],
+      "note": "Structural state extension built on reactive_graph. Separate granularity integration still unmeasured."
     },
     {
       "name": "leptos_reactive",
@@ -431,8 +475,8 @@
       "publishedUTC": "2024-09-08T00:17:55Z",
       "source": "https://index.crates.io/le/pt/leptos_reactive",
       "docs": "https://docs.rs/leptos_reactive/0.6.15",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "base64",
         "bytecheck",
@@ -470,15 +514,20 @@
       "publishedUTC": "2026-10-06T11:39:52Z",
       "source": "https://index.crates.io/sy/ca/sycamore-reactive",
       "docs": "https://docs.rs/sycamore-reactive/0.9.4",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_ENGINE",
       "normalDependencies": [
         "paste",
         "serde",
         "slotmap",
         "smallvec",
         "wasm-bindgen"
-      ]
+      ],
+      "adapters": [
+        "native-sycamore-cells"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "floem_reactive",
@@ -488,16 +537,23 @@
       "publishedUTC": "2024-11-14T21:05:45Z",
       "source": "https://index.crates.io/fl/oe/floem_reactive",
       "docs": "https://docs.rs/floem_reactive/0.2.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_ENGINE",
       "normalDependencies": [
         "smallvec"
-      ]
+      ],
+      "adapters": [
+        "native-floem-cells"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "reactive-signals",
       "source": "https://index.crates.io/re/ac/reactive-signals",
-      "status": "NO_STABLE_NONYANKED_RELEASE"
+      "status": "NO_STABLE_NONYANKED_RELEASE",
+      "comparisonClass": "UNRESOLVED_CANDIDATE",
+      "note": "Discovery is not coverage; eligibility and adapter/build gaps keep acceptance OPEN."
     },
     {
       "name": "futures-signals",
@@ -507,8 +563,8 @@
       "publishedUTC": "2024-07-26T03:10:50Z",
       "source": "https://index.crates.io/fu/tu/futures-signals",
       "docs": "https://docs.rs/futures-signals/0.3.34",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_ENGINE",
       "normalDependencies": [
         "discard",
         "futures-channel",
@@ -518,7 +574,12 @@
         "log",
         "pin-project",
         "serde"
-      ]
+      ],
+      "adapters": [
+        "native-futures-signals-cells"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "rxrust",
@@ -528,8 +589,8 @@
       "publishedUTC": "2021-10-20T15:29:37Z",
       "source": "https://index.crates.io/rx/ru/rxrust",
       "docs": "https://docs.rs/rxrust/0.15.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "async-std",
         "futures",
@@ -545,8 +606,8 @@
       "publishedUTC": "2023-06-10T12:01:31Z",
       "source": "https://index.crates.io/ca/rb/carboxyl",
       "docs": "https://docs.rs/carboxyl/0.2.2",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "lazy_static"
       ]
@@ -559,8 +620,8 @@
       "publishedUTC": "2026-09-02T10:56:29Z",
       "source": "https://index.crates.io/so/di/sodium-rust",
       "docs": "https://docs.rs/sodium-rust/2.1.3",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "log",
         "parking_lot"
@@ -574,9 +635,10 @@
       "publishedUTC": "2025-07-27T12:22:17Z",
       "source": "https://index.crates.io/3/f/frp",
       "docs": "https://docs.rs/frp/0.1.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
-      "normalDependencies": []
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "UNRELATED_NAME",
+      "normalDependencies": [],
+      "note": "Pinned published crate is a network proxy (gofrp), not functional reactive programming. Primary metadata retained."
     },
     {
       "name": "frappe",
@@ -586,8 +648,8 @@
       "publishedUTC": "2020-06-10T21:16:13Z",
       "source": "https://index.crates.io/fr/ap/frappe",
       "docs": "https://docs.rs/frappe/0.4.7",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "crossbeam-utils",
         "either",
@@ -600,7 +662,9 @@
       "name": "reactives",
       "source": "https://index.crates.io/re/ac/reactives",
       "status": "NOT_FOUND_ON_REGISTRY",
-      "error": "curl: (56) The requested URL returned error: 404"
+      "error": "curl: (56) The requested URL returned error: 404",
+      "comparisonClass": "UNRESOLVED_CANDIDATE",
+      "note": "Discovery is not coverage; eligibility and adapter/build gaps keep acceptance OPEN."
     },
     {
       "name": "signals",
@@ -610,8 +674,8 @@
       "publishedUTC": "2018-12-18T15:45:42Z",
       "source": "https://index.crates.io/si/gn/signals",
       "docs": "https://docs.rs/signals/0.0.5",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "failure"
       ]
@@ -624,14 +688,15 @@
       "publishedUTC": "2024-01-21T08:40:42Z",
       "source": "https://index.crates.io/co/nc/concoct",
       "docs": "https://docs.rs/concoct/0.18.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "UI_FRAMEWORK",
       "normalDependencies": [
         "futures",
         "rustc-hash",
         "slotmap",
         "tracing"
-      ]
+      ],
+      "note": "Reactive state is bound to view-tree rebuilding; runtime is private. A full UI comparison would change the declared workload."
     },
     {
       "name": "lazily",
@@ -642,7 +707,7 @@
       "source": "https://index.crates.io/la/zi/lazily",
       "docs": "https://docs.rs/lazily/0.60.0",
       "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "comparisonClass": "UNRESOLVED_CANDIDATE",
       "normalDependencies": [
         "arc-swap",
         "async-nats",
@@ -663,7 +728,8 @@
         "str0m",
         "tokio",
         "tokio-tungstenite"
-      ]
+      ],
+      "note": "Discovery is not coverage; eligibility and adapter/build gaps keep acceptance OPEN."
     },
     {
       "name": "dioxus-signals",
@@ -673,8 +739,8 @@
       "publishedUTC": "2026-07-30T23:02:55Z",
       "source": "https://index.crates.io/di/ox/dioxus-signals",
       "docs": "https://docs.rs/dioxus-signals/0.7.10",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "dioxus-core",
         "futures-channel",
@@ -695,14 +761,15 @@
       "publishedUTC": "2025-10-29T10:11:37Z",
       "source": "https://index.crates.io/xi/le/xilem_core",
       "docs": "https://docs.rs/xilem_core/0.4.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "UI_FRAMEWORK",
       "normalDependencies": [
         "anymore",
         "hashbrown",
         "kurbo",
         "tracing"
-      ]
+      ],
+      "note": "View/message framework, not a standalone record/query maintenance kernel."
     },
     {
       "name": "drasi-core",
@@ -712,8 +779,8 @@
       "publishedUTC": "2026-09-25T17:20:08Z",
       "source": "https://index.crates.io/dr/as/drasi-core",
       "docs": "https://docs.rs/drasi-core/0.5.10",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "NATIVE_ENGINE_CANDIDATE",
       "normalDependencies": [
         "approx",
         "async-recursion",
@@ -760,7 +827,7 @@
       "source": "https://index.crates.io/hy/dr/hydroflow",
       "docs": "https://docs.rs/hydroflow/0.10.0",
       "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "comparisonClass": "UNRESOLVED_CANDIDATE",
       "normalDependencies": [
         "bincode",
         "byteorder",
@@ -792,7 +859,8 @@
         "tracing",
         "variadics",
         "web-time"
-      ]
+      ],
+      "note": "Discovery is not coverage; eligibility and adapter/build gaps keep acceptance OPEN."
     },
     {
       "name": "dfir_rs",
@@ -803,7 +871,7 @@
       "source": "https://index.crates.io/df/ir/dfir_rs",
       "docs": "https://docs.rs/dfir_rs/0.16.0",
       "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "comparisonClass": "UNRESOLVED_CANDIDATE",
       "normalDependencies": [
         "bincode",
         "bytes",
@@ -836,7 +904,8 @@
         "tracing",
         "variadics",
         "web-time"
-      ]
+      ],
+      "note": "Discovery is not coverage; eligibility and adapter/build gaps keep acceptance OPEN."
     },
     {
       "name": "hydro_lang",
@@ -847,7 +916,7 @@
       "source": "https://index.crates.io/hy/dr/hydro_lang",
       "docs": "https://docs.rs/hydro_lang/0.16.0",
       "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "comparisonClass": "UNRESOLVED_CANDIDATE",
       "normalDependencies": [
         "anyhow",
         "auto_impl",
@@ -904,7 +973,8 @@
         "tracing",
         "tracing-subscriber",
         "trybuild-internals-api"
-      ]
+      ],
+      "note": "Discovery is not coverage; eligibility and adapter/build gaps keep acceptance OPEN."
     },
     {
       "name": "datafusion",
@@ -915,7 +985,7 @@
       "source": "https://index.crates.io/da/ta/datafusion",
       "docs": "https://docs.rs/datafusion/55.2.0",
       "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "comparisonClass": "UNRESOLVED_CANDIDATE",
       "normalDependencies": [
         "arrow",
         "arrow-schema",
@@ -964,7 +1034,8 @@
         "url",
         "uuid",
         "zstd"
-      ]
+      ],
+      "note": "Discovery is not coverage; eligibility and adapter/build gaps keep acceptance OPEN."
     },
     {
       "name": "polonius-engine",
@@ -974,13 +1045,14 @@
       "publishedUTC": "2021-08-03T18:10:51Z",
       "source": "https://index.crates.io/po/lo/polonius-engine",
       "docs": "https://docs.rs/polonius-engine/0.13.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "FIXED_DOMAIN_RULES",
       "normalDependencies": [
         "datafrog",
         "log",
         "rustc-hash"
-      ]
+      ],
+      "note": "Compiler borrow-analysis engine with fixed Datalog schema/rules. Supplying precomputed matches would move the benchmark work outside the native engine."
     },
     {
       "name": "rstar",
@@ -990,15 +1062,23 @@
       "publishedUTC": "2026-05-24T13:51:26Z",
       "source": "https://index.crates.io/rs/ta/rstar",
       "docs": "https://docs.rs/rstar/0.13.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "NATIVE_SMALL_CORRECTNESS_PASS_TARGET_SCREEN_IN_PROGRESS",
+      "comparisonClass": "NATIVE_INDEX_COMPONENT",
       "normalDependencies": [
         "heapless",
         "mint",
         "num-traits",
         "serde",
         "smallvec"
-      ]
+      ],
+      "adapters": [
+        "native-rstar",
+        "native-rstar-shared",
+        "native-rstar-delta",
+        "native-rstar-delta-shared"
+      ],
+      "evidenceCommit": "bbee34d",
+      "note": "15 scenarios; target-size full-vector verification in each screen run. Acceptance not complete."
     },
     {
       "name": "kiddo",
@@ -1008,8 +1088,8 @@
       "publishedUTC": "2026-09-06T16:56:29Z",
       "source": "https://index.crates.io/ki/dd/kiddo",
       "docs": "https://docs.rs/kiddo/6.3.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "COMPONENT_ADAPTER_PENDING",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "aligned-vec",
         "array-init",
@@ -1044,8 +1124,8 @@
       "publishedUTC": "2026-07-23T21:09:43Z",
       "source": "https://index.crates.io/kd/tr/kdtree",
       "docs": "https://docs.rs/kdtree/0.8.1",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "COMPONENT_ADAPTER_PENDING",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "num-traits",
         "serde",
@@ -1061,8 +1141,8 @@
       "publishedUTC": "2025-11-16T05:21:44Z",
       "source": "https://index.crates.io/kd/-t/kd-tree",
       "docs": "https://docs.rs/kd-tree/0.6.2",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "COMPONENT_ADAPTER_PENDING",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "nalgebra",
         "num-traits",
@@ -1081,8 +1161,8 @@
       "publishedUTC": "2026-08-12T17:04:50Z",
       "source": "https://index.crates.io/ro/ar/roaring",
       "docs": "https://docs.rs/roaring/0.11.5",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "bytemuck",
         "byteorder",
@@ -1097,8 +1177,8 @@
       "publishedUTC": "2026-09-20T03:34:14Z",
       "source": "https://index.crates.io/cr/oa/croaring",
       "docs": "https://docs.rs/croaring/2.8.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "COMPONENT_ADAPTER_PENDING",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "allocator-api2",
         "ffi"
@@ -1112,8 +1192,8 @@
       "publishedUTC": "2026-06-18T19:47:24Z",
       "source": "https://index.crates.io/bi/tv/bitvec",
       "docs": "https://docs.rs/bitvec/1.1.1",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "funty",
         "radium",
@@ -1130,8 +1210,8 @@
       "publishedUTC": "2024-04-14T23:53:05Z",
       "source": "https://index.crates.io/fi/xe/fixedbitset",
       "docs": "https://docs.rs/fixedbitset/0.5.7",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "serde"
       ]
@@ -1144,8 +1224,8 @@
       "publishedUTC": "2026-07-10T12:48:28Z",
       "source": "https://index.crates.io/bi/t-/bit-set",
       "docs": "https://docs.rs/bit-set/0.11.1",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "bit-vec",
         "borsh",
@@ -1161,8 +1241,8 @@
       "publishedUTC": "2023-09-16T06:43:45Z",
       "source": "https://index.crates.io/hi/bi/hibitset",
       "docs": "https://docs.rs/hibitset/0.6.4",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "rayon"
       ]
@@ -1175,8 +1255,8 @@
       "publishedUTC": "2026-08-14T02:30:08Z",
       "source": "https://index.crates.io/ra/ng/rangemap",
       "docs": "https://docs.rs/rangemap/1.8.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "ordered-float",
         "quickcheck",
@@ -1191,8 +1271,8 @@
       "publishedUTC": "2021-11-04T13:37:05Z",
       "source": "https://index.crates.io/in/te/intervaltree",
       "docs": "https://docs.rs/intervaltree/0.2.7",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "ADAPTER_WRITTEN_NOT_YET_BUILT_OR_VALIDATED",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "serde",
         "smallvec"
@@ -1206,8 +1286,8 @@
       "publishedUTC": "2018-12-28T12:37:45Z",
       "source": "https://index.crates.io/se/gm/segment-tree",
       "docs": "https://docs.rs/segment-tree/2.0.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "COMPONENT_ADAPTER_PENDING",
+      "comparisonClass": "INDEX_OR_SET_COMPONENT",
       "normalDependencies": [
         "num-bigint"
       ]
@@ -1220,8 +1300,8 @@
       "publishedUTC": "2026-09-13T20:07:26Z",
       "source": "https://index.crates.io/sq/lp/sqlparser",
       "docs": "https://docs.rs/sqlparser/0.63.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "PARSER",
       "normalDependencies": [
         "bigdecimal",
         "log",
@@ -1229,7 +1309,8 @@
         "serde",
         "serde_json",
         "sqlparser_derive"
-      ]
+      ],
+      "note": "Parses SQL; does not execute/maintain query results."
     },
     {
       "name": "zenoh",
@@ -1239,8 +1320,8 @@
       "publishedUTC": "2026-09-07T11:54:58Z",
       "source": "https://index.crates.io/ze/no/zenoh",
       "docs": "https://docs.rs/zenoh/1.10.1",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "TRANSPORT",
       "normalDependencies": [
         "ahash",
         "arc-swap",
@@ -1286,7 +1367,8 @@
         "zenoh-task",
         "zenoh-transport",
         "zenoh-util"
-      ]
+      ],
+      "note": "Network pub/sub/query transport; content query kernel must be supplied separately."
     },
     {
       "name": "dust_dds",
@@ -1296,8 +1378,8 @@
       "publishedUTC": "2026-09-11T14:41:04Z",
       "source": "https://index.crates.io/du/st/dust_dds",
       "docs": "https://docs.rs/dust_dds/0.16.0",
-      "status": "DISCOVERED_NOT_ADAPTED",
-      "comparisonClass": "UNCLASSIFIED",
+      "status": "CLASSIFIED_NOT_AN_INDEPENDENT_COMMON_KERNEL",
+      "comparisonClass": "TRANSPORT",
       "normalDependencies": [
         "critical-section",
         "dust_dds_derive",
@@ -1308,7 +1390,8 @@
         "roxmltree",
         "socket2",
         "tracing"
-      ]
+      ],
+      "note": "DDS implementation; full transport semantics are outside this in-process result kernel comparison."
     }
   ]
 }
