@@ -1,0 +1,14 @@
+✔ mixed traces match independent full recomputation, with several routing budgets (1308.015875ms)
+✔ 20,000 identical subscriptions deliver complete events and release shared state (53.507125ms)
+✔ invalid overwritten queries preserve state and caller output; captures own inputs (0.546917ms)
+✔ full-width values, boundary cells, atomic ID reuse and query moves (0.286083ms)
+✔ generic categorical records, duplicate routing keys and colliding query hashes (6.815125ms)
+✔ transient queries do not install subscriptions or duplicate routed results (0.265792ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1421.497583
